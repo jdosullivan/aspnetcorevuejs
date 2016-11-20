@@ -25,7 +25,4 @@ Includes:
 
 
 ## Screenshot
-(https://raw.githubusercontent.com/jdosullivan/aspnetcorevuejs/master/screenshot.png)
-
-
-![Containers](https://raw.githubusercontent.com/stefanprodan/dockerdash/master/screens/host-containers-dockerdash.png)
+![Containers](https://raw.githubusercontent.com/jdosullivan/aspnetcorevuejs/master/screenshot.png)
