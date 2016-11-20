@@ -1,0 +1,60 @@
+{
+    "version": "0.1.0",
+    "command": "cmd",
+    "args": [
+        "/C"
+    ],
+    "isShellCommand": true,
+    "showOutput": "always",
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "build-all",
+            "args": [
+                "dotnet",
+                "build",
+                "src/web",
+                "src/api"
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "build-web",
+            "args": [
+                "dotnet",
+                "build",
+                "src/web"
+            ]
+        },
+        {
+            "taskName": "build-api",
+            "args": [
+                "dotnet",
+                "build",
+                "src/api"
+            ]
+        },
+        {
+            "taskName": "tests",
+            "args": [
+                "dotnet",
+                "test",
+                "tests"
+            ],
+            "isTestCommand": true
+        },
+        {
+            "taskName": "deploy-api-to-azure",
+            "args": [
+                "git push api master"
+            ]
+        },
+        {
+            "taskName": "deploy-web-to-azure",
+            "args": [
+                "git push azure master"
+            ]            
+        }
+    ]
+}

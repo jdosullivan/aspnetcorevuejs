@@ -1,0 +1,120 @@
+﻿.innerBody {
+    padding-top: 30px;
+}
+#page-courses {
+    $header-height: 49px;
+
+    #header {
+        border-bottom: 1px solid #e5e5e5;
+        position: relative;
+        z-index: 10;
+
+        #logo {
+            width: 240px;
+            height: $header-height;
+            line-height:$header-height;
+            -webkit-box-shadow: 6px 0px 9px 0px rgba(165, 165, 165, 0.07);
+            -moz-box-shadow: 6px 0px 9px 0px rgba(165, 165, 165, 0.07);
+            box-shadow: 6px 0px 9px 0px rgba(165, 165, 165, 0.07);
+
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        h2.cityName {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #header-search {
+            .search-icon {
+                color: #bbb;
+                position: absolute;
+                top: 32px;
+                cursor: pointer;
+            }
+
+            input {
+                border: none;
+                font-size: 16px;
+                letter-spacing: 0.5px;
+                line-height: 18px;
+                height: 78px;
+                width: 97%;
+                margin-left: 23px;
+                background: inherit;
+                outline: none;
+            }
+        }       
+
+        .links {
+            padding-top: 10px;
+            text-align: right;
+            a {
+               margin-right: 10px;
+            }
+        }
+    }
+
+    #navigation-wrapper {
+        background: #4c5358;
+        margin-bottom: 30px;
+
+        ul.menu {
+            margin-bottom: 0;
+            width: 100%;
+
+            li {
+                padding: 0;
+            }
+        }
+    }
+
+    #courses {
+        .course {
+            height: 228px;
+            margin-bottom: 30px;
+
+            h3.title {
+                margin: 0;
+                line-height: 21px;
+                margin-bottom: 4px;
+                overflow: hidden;
+
+                a {
+                    font-size: 13px;
+                    color: #000;
+                    font-weight: 700;
+                    overflow: hidden;
+                }
+            }
+
+            .meta {
+                font-size: 12px;
+                color: #999;
+                overflow: hidden;                
+            }
+        }
+    }
+}
+
+#page-footer {
+    background-color: #f1f4f5;
+    padding: 60px 0 60px;
+    text-align: center;
+
+     .social {
+            -webkit-box-shadow: -6px 0px 9px 0px rgba(165, 165, 165, 0.07);
+            -moz-box-shadow: -6px 0px 9px 0px rgba(165, 165, 165, 0.07);
+            box-shadow: -6px 0px 9px 0px rgba(165, 165, 165, 0.07);
+
+            a {
+                color: #bbb;
+                font-size: 24px;
+                margin-left: 10px;
+            }
+        }
+}

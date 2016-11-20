@@ -1,0 +1,21 @@
+Create new executable:  dotnet new
+Create class library in folder:  dotnet new -t lib
+Run tests - dotnet test
+Build - dotnet build
+Restore - dotnet restore
+Restore and clear cache = dotnet restore --no-cache
+Publish -- dotnet publish
+Publish production -- dotnet publish -configuration release
+
+From the data project on command line:
+	Add new Migration - dotnet ef migrations add <NameOfUpdate>
+	Remove Migration - dotnet ef migrations undo 
+	Update database - dotnet ef database update
+
+
+To rollback EF:
+    1. Roll back the db to the migration before e.g dotnet ef database update Initial
+    2. Remove the last migration file: dotnet ef migrations remove
+
+
+dotnet publish -- publish to IIS
