@@ -63,7 +63,6 @@ namespace GroupClue.Web
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            Console.WriteLine("ConnectionString: " + Configuration["API_URL"]);
             services.AddSingleton<IConfiguration>(sp => { return Configuration; });
             
             var connectionString = Configuration["Database:ConnectionString"];
